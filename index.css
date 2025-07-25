@@ -151,8 +151,16 @@
     font-size: 3rem;
 }
 .lover-image{
+    position: relative;
+    overflow: visible;
     width: auto;
-
+}
+.sticker{
+    max-width: 286px;
+    max-width: 286px;
+    position: absolute;
+    top: -100px;
+    left: 350px;
 }
 .lover-description{
     font-size: 1.5rem;

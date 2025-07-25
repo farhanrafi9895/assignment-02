@@ -181,38 +181,75 @@
     max-width: 888px;
     text-align: center;
 }
-.deal-images{
-    border: 1px solid red;
-    max-width: 1140px;
-    margin: 120px auto;
+.join-section{
+    background-image: 
+    url("assets/news-letter-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 533px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-form{
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+}
+.join-msg{
+    max-width: 830px;
+}
+.join-title{
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+.join-email{
+    padding: 12px;
+    width: 100%;
+    border: none;
+}
+.sub-btn{
+    background-color:#E95A08 ;
+    color: #FFFFFF;
+    padding: 12px 36px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.footer{
+    max-width: 1120px;
+    margin: 50px auto;
     display: grid;
-    gap: 28px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    "a c c"
-    "b c c";
-   
+    gap: 110px;
 }
-.img-1{
-    grid-area: a;
-    /*background-image: url(assets/deal-bloom.png);*/
+.footer-left-desci{
+    max-width: 359px;
+    font-size: 1.2rem;
 }
-.img-2{
-    grid-area: b;
-  /*  background-image: url(assets/deal-ana.png);*/
-
+.footer-middle a{
+    text-decoration: none;
+    color: #8987A1;
 }
-.img-3{
-    grid-area: c;
-   /* background-image: url(assets/deal-zabo.png);*/
-
+.footer-middle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
 }
-
+.footer-right {
+   max-width: 216px;
+}
 
 @media screen and (max-width:576px){
     .nav-menu-item{
         display: none;
+    }
+    .navbar{
+        padding: 0 10px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -283,6 +320,26 @@
     padding: 0 28.5px;
     margin-top: 16px;
 }
+.join-title{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.join-msg{
+    max-width: 321px;
+}
+.join-section{
+    max-height: 275px;
+}
+.footer{
+    padding-left: 20px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+.footer-middle{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+
 
 
     
